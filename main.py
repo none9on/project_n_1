@@ -196,7 +196,7 @@ while True:
     if numberchecking(n):
         n = int(n)
         if n == 1 or n == 2:
-            string = input('Введите текст\n')
+            string = input('Введите данные.\n')
             if stringchecking(string):
                 if n == 1:
                     print('Выберите способ зашифровки текста:\n"1" - посимвольно\n"2" - по словам\n"3" - по блокам')
@@ -213,7 +213,7 @@ while True:
                         elif z == 2:
                             print(encryption_2(string, code, n))
                         else:
-                            lenb = input('Введите длину блока\n')
+                            lenb = input('Введите размер блока\n')
                             if lengthcheking(lenb):
                                 lenb = int(lenb)
                                 print(encryption_3(string, code, n, lenb))
